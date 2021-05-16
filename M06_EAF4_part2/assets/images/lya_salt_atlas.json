@@ -1,0 +1,125 @@
+{
+	"textures": [
+		{
+			"image": "lya_salt_atlas.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 439,
+				"h": 152
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "salt1_pix.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 150
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 150
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 60,
+						"h": 150
+					}
+				},
+				{
+					"filename": "salt2_pix.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 73,
+						"h": 150
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 11,
+						"w": 68,
+						"h": 139
+					},
+					"frame": {
+						"x": 63,
+						"y": 1,
+						"w": 68,
+						"h": 139
+					}
+				},
+				{
+					"filename": "salt3_pix.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 85,
+						"h": 150
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 85,
+						"h": 150
+					},
+					"frame": {
+						"x": 133,
+						"y": 1,
+						"w": 85,
+						"h": 150
+					}
+				},
+				{
+					"filename": "salt4_pix.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 117,
+						"h": 150
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 117,
+						"h": 150
+					},
+					"frame": {
+						"x": 220,
+						"y": 1,
+						"w": 117,
+						"h": 150
+					}
+				},
+				{
+					"filename": "salt5_pix.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 103,
+						"h": 150
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 6,
+						"w": 99,
+						"h": 144
+					},
+					"frame": {
+						"x": 339,
+						"y": 1,
+						"w": 99,
+						"h": 144
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:4ac298e83b9d027aff94030b6a20798c:46e4d5dab6d0d265037e08936484c6f4:2c57b45a0e0b0f96fd89ee06d429a287$"
+	}
+}

@@ -1,0 +1,270 @@
+{
+	"textures": [
+		{
+			"image": "froggy.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 850,
+				"h": 58
+			},
+			"scale": 0.5,
+			"frames": [
+				{
+					"filename": "frog_1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 63,
+						"h": 54
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 63,
+						"h": 54
+					},
+					"frame": {
+						"x": 2,
+						"y": 2,
+						"w": 63,
+						"h": 54
+					},
+					"anchor": {
+						"x": 0.64,
+						"y": 0.93457944
+					}
+				},
+				{
+					"filename": "frog_2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 53
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 53
+					},
+					"frame": {
+						"x": 69,
+						"y": 2,
+						"w": 64,
+						"h": 53
+					},
+					"anchor": {
+						"x": 0.68503937,
+						"y": 0.94339623
+					}
+				},
+				{
+					"filename": "frog_3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 65,
+						"h": 52
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 65,
+						"h": 52
+					},
+					"frame": {
+						"x": 137,
+						"y": 2,
+						"w": 65,
+						"h": 52
+					},
+					"anchor": {
+						"x": 0.66666667,
+						"y": 0.96153846
+					}
+				},
+				{
+					"filename": "frog_4.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 84,
+						"h": 47
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 84,
+						"h": 47
+					},
+					"frame": {
+						"x": 206,
+						"y": 2,
+						"w": 84,
+						"h": 47
+					},
+					"anchor": {
+						"x": 0.68862275,
+						"y": 0.96774194
+					}
+				},
+				{
+					"filename": "frog_5.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 142,
+						"h": 46
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 142,
+						"h": 46
+					},
+					"frame": {
+						"x": 294,
+						"y": 2,
+						"w": 142,
+						"h": 46
+					},
+					"anchor": {
+						"x": 0.81625442,
+						"y": 0.98901099
+					}
+				},
+				{
+					"filename": "frog_6.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 119,
+						"h": 47
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 119,
+						"h": 47
+					},
+					"frame": {
+						"x": 440,
+						"y": 2,
+						"w": 119,
+						"h": 47
+					},
+					"anchor": {
+						"x": 0.79746835,
+						"y": 0.96774194
+					}
+				},
+				{
+					"filename": "frog_7.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 84,
+						"h": 53
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 84,
+						"h": 53
+					},
+					"frame": {
+						"x": 563,
+						"y": 2,
+						"w": 84,
+						"h": 53
+					},
+					"anchor": {
+						"x": 0.73809524,
+						"y": 0.95238095
+					}
+				},
+				{
+					"filename": "frog_8.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 53
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 53
+					},
+					"frame": {
+						"x": 651,
+						"y": 2,
+						"w": 64,
+						"h": 53
+					},
+					"anchor": {
+						"x": 0.65354331,
+						"y": 0.94339623
+					}
+				},
+				{
+					"filename": "frog_9.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 62,
+						"h": 54
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 62,
+						"h": 54
+					},
+					"frame": {
+						"x": 719,
+						"y": 2,
+						"w": 62,
+						"h": 54
+					},
+					"anchor": {
+						"x": 0.66129032,
+						"y": 0.92592593
+					}
+				},
+				{
+					"filename": "frog_10.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 63,
+						"h": 54
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 63,
+						"h": 54
+					},
+					"frame": {
+						"x": 785,
+						"y": 2,
+						"w": 63,
+						"h": 54
+					},
+					"anchor": {
+						"x": 0.664,
+						"y": 0.93457944
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:53e71d67b0926aa25d8f9503918bb410:9a71f0f1c0454fe29fc10b71a3f6d74c:09dcf697e7bf253e56ba363b4773f53e$"
+	}
+}
