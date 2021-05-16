@@ -1,0 +1,312 @@
+
+/*Pàgina d'estil de l'aplicatiu TakeAway Lleida. Aquí es troben els estils dels elements
+de totes les pàgines que formen l'aplicació. L'ordre és una mica caòtic, degut principal-
+ment a la falta de coneixement i experiència, i també perquè algunes idees sorgien sobre
+la marxa, i s'han implementat fora de lloc. Val a dir també que, segurament hi ha una ma-
+nera més endreçada, i que requereixi de menys línies de codi per dur-se a terme, i acon-
+seguir els mateixos resultats, però de nou la falta d'experiència, i també de temps m'han
+fet optar sovint per vies ja conegudes, i per tant més ràpides d'aplicar.*/
+
+*{/*Aquest efecte s'aplica a tots els elements, i defineix la tipografia i mesura de lletra.*/
+	font-family: Verdana;
+	font-size: 1em;
+}
+body{background-color: #f8fcff;} /*Color de fons del cos de les pàgines.*/
+p {color:black;} /*Color dels textos dins els quadres de text.*/
+
+img#foto_cap{ /*Estil de les imatges de capçalera. S'en defineixen mesures, posició i opacitat.*/
+	width:99.5%;
+	height:300px;
+	position:absolute;
+	opacity: 0.7;
+}
+div#capçalera { /*Estil de la divisió de capçalera de les pàgines. Es defineixen mesures,
+	posició, i sagnat des de l'esquerra.*/
+	width: 1000px;
+	height: 100px;
+	position: relative;
+	left:450px;
+}
+p#titol { /*Estil del títol de la pàgina. A part de mesures i posició, es defineixen sag-
+	nats, mesura, color i estil de la font, així com una vora en negre sobre el text.*/
+	width: 600px;
+	height: 70px;
+	position: absolute;
+	top: 5px;
+	right:160px;
+	font-size: 3em;
+	font-weight: bold;
+	color:white;
+	-webkit-text-stroke:1.5px black; /*Codi per obtenir una vora sobre el text*/
+ }
+img#logo { /*Estil del logo de l'empresa.*/
+	width: 100px;
+	height: 100px;
+	margin-top:30px;
+}
+p#login { /*Estil del text 'login'. Mesures i posició, sagnat, color i estil de lletra,
+i vora sobre aquesta.*/
+	width:100px;
+	height:auto;
+	position: absolute;
+	top:58px;
+	right:35px;
+	font-weight: bold;
+	color:white;
+	-webkit-text-stroke:0.7px black;
+}
+p#ajuda { /*Estil del text 'ajuda'. El mateix que per a 'login'.*/
+	width:100px;
+	height: auto;
+	position: absolute;
+	top:58px;
+	right:-30px;
+	font-weight: bold;
+	color:white;
+	-webkit-text-stroke:0.7px black;
+}
+div#lateral { /*Estil del contenidor per al menú lateral. Es defineixen mesures i sagnat
+	respecte a la pàgina i els altres elements.*/
+	width: 161px;
+	height: 250px;
+	margin-left: 480px;
+	margin-top:280px;
+}
+.mmenu ul{ /*Estil del menú lateral. Eliminem l'estil de la llista, per evitar que apareguin
+els punts que delimiten els elements, l'ajustem als marges del div 'lateral', ajustem les
+mesures, i modifiquem la mesura i estil de font, així com l'alçada de la capsa de text.*/
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	width: 100px;
+	font-size:1,4em;
+	font-weight: bold;
+	line-height: 40px;
+}
+.mmenu li{ /*Estil per als elements del menú lateral. Ajustem la seva posició i mesures
+respecte al cos del menú, i creem un marc, on definim el gruix de línia, el color, l'es-
+til i el color de fons. També n'arrodonim les vores, i ajustem la posició respecte als
+marges superiors del menú.*/
+	padding-left:10px;
+	margin-bottom: 10px;
+	width:150px;
+	border-width: 1px;
+	border-color: #51abff;
+	border-style: solid;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	top:280px;
+}
+.mmenu a { /*Estil per al text dins els elements del menú lateral. Al tractar-se d'un
+enllaç, n'eliminem la decoració, per evitar el color i subratllat del text. Hi afegim 
+el color desitjat, i bloquegem la visualització de l'element.*/
+	text-decoration: none;
+	color:#000000;
+	display:block;
+}
+.mmenu a:hover { /*Aquest apartat indica com actuarà el text si el punter hi passa per 
+sobre. Es canvia el color del text, i s'hi afegeix una petita vora per fer-lo més llegible.*/
+	color:#f0aa27;
+	-webkit-text-stroke:0.2px #674021;
+}
+.mmenu ul li ul { /*Indiquem als elements del submenú 'tipus de cuina' que no es mostrin.*/
+		display: none;
+}
+.mmenu ul li a:hover + ul, .mmenu ul li ul:hover { /*Amb aquest codi indiquem que, en cas
+que el cursor passi per un element que compta amb un submenú, o posteriorment per un dels
+elements desplegats, els elements del submenú es mostrin visibles en pantalla.*/
+		display: block;
+}
+div#cos { /*Estil del cos principal de la pàgina. N'establim les mesures, i el sagnat res-
+pecte l'esquerra i la part superior.*/
+	width: 700px;
+	height: auto;
+	margin-left: 700px;
+	margin-top:-300px;
+}
+p#titular{ /*Estil dels titulars dins el cos principal. Establim mesures, tant del quadre
+de text com de la font, i justifiquem el contingut del text.*/
+	width:700px;
+	text-align: justify;
+	font-size: 2.5em;
+}
+p#text_ppal,p#text_ppal2{ /*Estil dels textos principals, dins el cos principal. Establim
+	amplada per al quadre de text, i en justifiquem el contingut.*/
+	width:700px;
+	text-align: justify;
+}
+img#mapa{ /*Estil de la imatge dins el cos principal de la pàgina 'index'. Establim mesures.*/
+	width:700px;
+	height: auto;
+}
+div#peu{ /*Estil del contenidor que es troba dins el 'footer'. Establim amplada, que no és
+del 100%, ja que sinó es creava un mínim scroll horitzontal, color de fons, mesura, estil
+i alineació del text, així com alçada de la capsa de text.*/
+	width:99.9%;
+	background-color: #ddedee;
+	text-align:center;
+	font-size: 0.8em;
+	font-weight: bold;
+	line-height: 40px;
+}
+video#cuines{ /*Estil del vídeo de presentació de 'tipus de cuines'. Es defineixen mesures,
+i es crea una vora, definint-ne el gruix, estil i color.*/
+	width: 700px;
+	height:auto;
+	border:1px;
+	border-style: solid;
+	border-color: #51abff;
+}
+audio#italia{ /*Estil del quadre d'àudio dins la pàgina de cuina italiana. Establim mesures.*/
+	width:700px;
+	height:auto;
+}
+form#contacte{ /*Estil del formulari de contacte. Establim mesures i alçada de capsa de text.*/
+	width:700px;
+	height:auto;
+	line-height: 28px;
+}
+form#contacte input{ /*Estil per a les entrades del formulari, exceptuant desplegables i
+selectors. Es dibuixen unes vores, definint-ne gruix, estil i color, i s'estableix un 
+petit sagnat al text existent dins el quadre.*/
+	padding:3px;
+	border: 1px solid #51abff;
+}
+input:focus{ /*Estil per als quadres d'entrada de dades, quan aquests es trobin seleccio-
+nats. Fem la vora més gruixuda, i en canviem el color de fons.*/
+	border:2px solid #000;
+	background: #f1f1f1;
+}
+input#boto { /*Estil per als botons d'enviar i esborrar formulari. En definim mesures,
+donem un petit marge, els situem dins la pàgina, i en creem una vora, i un fons degradat,
+afegint-hi també certa ombra. D'aquesta manera s'aconsegueix un aspecte més tridimensional.*/
+	width:100px;
+	margin:10px 10px;
+	position:relative;
+	left:160px;
+	background: #b7b5b5;
+    background: -moz-linear-gradient(top, #f1f1f1 0%, #b7b5b5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(100%,#b7b5b5));
+    border: 1px solid #62C2F9;
+    border-radius: 3px; /*Arrodonim les cantonades dels botons.*/
+}
+input#boto:hover{cursor: pointer;} /*Si el cursor passa per sobre els botons, en canviem
+l'aparença, per fer veure que els botons es poden clicar.*/
+p#requerit{ /*Estil del text auxiliar de tipus llegenda, que indica que els camps són re-
+	querits. Donem una mesura de font, i en variem l'estil, el color i l'alineació.*/
+	font-size:14px;
+	font-style: italic;
+	color:#a5a5a5;
+	text-align: right;
+}
+div#msg{ /*Estil del contenidor del missatge de confirmació d'enviament de formulari. 
+N'ajustem l'amplada.*/
+	height:540px;
+}
+p#missatge_ok{ /*Estil del missatge de confirmació. N'ajustem les mesures, i establim un
+marge respecte la part esquerra i superior de la pàgina per al text, que veu modificada la
+seva mesura, i també l'alineament.*/
+	width:600px;
+	height:auto;
+	font-size: 1.8em;
+	text-align:center;
+	margin-left:650px;
+	margin-top:250px;
+}
+a#enrere { /*Estil per al botó Enrere, que torna a la pàgina principal des de la pàgina de
+confirmació. Eliminem la decoració de l'enllaç, establim un petit marge, i el situem al
+lloc convenient dins la pantalla. També creem una vora i un fons degradat per al botó, de
+manera similar als botons d'enviament i esborrat del formulari.*/
+	padding: 10px;
+	text-decoration: none;
+	background: #b7b5b5;
+	background: -moz-linear-gradient(top, #f1f1f1 0%, #b7b5b5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(100%,#b7b5b5));
+	border: 1px solid #62C2F9;
+	border-radius: 3px;
+	position:relative;
+	left:910px;
+	top:80px;
+}
+div#tipus{ /*Estil del contenidor per als quatre 'botons' existents dins el cos principal
+de la pàgina 'Tipus de cuina', que mostren diferents gastronomies, amb una imatge represen-
+tativa. Definim amplada i alçada del botó, creem i definim els paràmetre de la vora. També
+n'establim un color de fons, i la seva posició de visualització, i marge respecte a la res-
+ta d'elements.*/
+	width: 162px;
+	height: 200px;
+	border:1px;
+	border-style: solid;
+	border-color: #51abff;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	display:inline-block; /*Mostra els diferents botons en línea, i no pas en columna.*/
+	margin:3px; /*Marge entre cadascun dels botons.*/
+}
+img#bot_menjar{ /*Estil de les imatges per als botons de tipus de cuina. Es mira d'ajus-
+tar les mesures i marge respecte al botó que les conté, per intentar centrar-les.*/
+	width: 150px;
+	height:auto;
+	margin-top:40px;
+	margin-left:6px;
+}
+a#bot_tipo1{ /*Els estils referents als enllaços a cadascun dels tipus de cuina han hagut
+de crear-se per separat, ja que per aconseguir que els textos quedessin alineats ha estat
+necessari jugar amb el marge superior respecte a la imatge de referència, de manera indi-
+vidualitzada. Amb una feina prèvia d'edició d'imatges es podria haver estalviat aquest
+procés, i segurament, tal i com està ara existeix una manera més 'neta' d'aconseguir el
+mateix resultat, però no he aconseguit trovar-la. Quant a l'estil, eliminem la decoració
+de l'enllaç, ajustem la mesura, estil, alineació, color i sagnat del text, i en bloque-
+gem la visualització. */
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-top:40px; /*Ajustem el marge convenientment.*/
+	color:#000000;
+	display:block;
+}
+a#bot_tipo2{ /*El mateix que per a 'bot_tipo1'.*/
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-top:13px; /*Ajustem el marge convenientment.*/
+	color:#000000;
+	display:block;
+}
+a#bot_tipo3{ /*El mateix que per a 'bot_tipo1'.*/
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-top:1px; /*Ajustem el marge convenientment.*/
+	color:#000000;
+	display:block;
+}
+a#bot_tipo4{ /*El mateix que per a 'bot_tipo1'.*/
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-top:38px; /*Ajustem el marge convenientment.*/
+	color:#000000;
+	display:block;
+}
+a#bot_tipo1:hover { /*Estil del text quan el punter hi passa per sobre. Canviem el color
+	del text, i hi afegim una petita vora per millorar la llegibilitat.*/
+	color:#f0aa27;
+	-webkit-text-stroke:0.2px #674021;
+}
+a#bot_tipo2:hover { /*El mateix que per a 'bot_tipo1'.*/
+	color:#f0aa27;
+	-webkit-text-stroke:0.2px #674021;
+}
+a#bot_tipo3:hover { /*El mateix que per a 'bot_tipo1'.*/
+	color:#f0aa27;
+	-webkit-text-stroke:0.2px #674021;
+}
+a#bot_tipo4:hover { /*El mateix que per a 'bot_tipo1'.*/
+	color:#f0aa27;
+	-webkit-text-stroke:0.2px #674021;
+}

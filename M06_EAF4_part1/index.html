@@ -1,0 +1,58 @@
+
+<!--Pàgina principal de l'aplicatiu. Es presenta el projecte i s'en destaquen els punts forts. Es mostra també l'estructura bàsica del lloc web.-->
+<!DOCTYPE html>
+<html>
+<head><!--En aquest apartat hi definim el títol de la pàgina ('title'), que també es mostrarà a la pestanya corresponent del navegador. També referenciem la pàgina d'estils associada al lloc web ('link'), i afegim dades referents a protocols i informació del lloc web ('meta').-->
+	<title>Takeaway Lleida - Menjar a domicili a la ciutat de Lleida</title>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset-UTF-8"
+	name="author" content="Guillem Planas Vargas">
+</head>
+
+<body><!--Dividim l'estructura del cos de la pàgina ('body') en quatre apartats: el 'header' o capçalera, el 'footer' o peu de pàgina, i dos'div', o divisions/contenidors, corresponents al menú lateral, i al cos principal de la pàgina.-->
+
+	<header><!--Dins la capçalera hi carreguem una imatge de fons ('img'), i creem un nou contenidor ('div') on hi afegirem el títol de la pàgina, i els textos de 'login' i ajuda, per mitjà de línies de text ('p'). Per altra banda, també hi afegim el logo de l'empresa, però l'associem a un enllaç ('a'), que ens portarà a la pàgina principal ('index').-->
+		<img id="foto_cap" src="images/food.png" alt="Plats amb menjar">
+		<div id="capçalera">
+			<p id="titol">TAKEAWAY LLEIDA</p>
+			<a id="home" href="index.html"><img id="logo" src="images/logo.png" alt="Logo de l'empresa"></a>
+			<p id="login">Login</p>
+			<p id="ajuda">Ajuda</p>
+		</div>
+	</header>
+
+	<div id="lateral"><!--Aquesta primera divisió, després de la capçalera, correspon al menú lateral, on hem creat una llista ordenada ('ul'), amb subapartats dins l'opció 'tipuscuina'. Els membres de la llista són enllaços a diferents continguts de la pàgina, tot i que no tots estan actius.-->
+		<nav class="mmenu">
+			<ul><!--Menú principal-->
+				<li><a href="tipuscuina.html">Tipus de cuina</a>
+					<ul><!--Submenú Tipus de cuina-->
+						<li><a href="cuinaitaliana.html">Italiana</a></li>
+						<li><a href="#">Japonesa</a></li>
+						<li><a href="#">Americana</a></li>
+						<li><a href="#">Àrab</a></li>				
+						<li><a href="#">Catalana</a></li>	
+					</ul>
+				</li>
+				<li><a href="#">Rànquing</a></li>
+				<li><a href="#">Ressenyes</a></li>
+				<li><a href="#">Ofertes</a></li>
+				<li><a href="contacte.html">El meu compte</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div id="cos"><!--La segona divisió correspon al cos principal de la pàgina, i està formada bàsicament per línies de text ('p'). Hi podem trobar diferenciats el titular respecte a la resta del text, per d'aquesta manera posteriorment poder-ne variar l'estil dins el full CSS. També hi trobem intercalada una imatge d'un plànol d'alguns carrers de la ciutat de Lleida, amb restaurants indicats sobre el mateix.-->
+		<p id="titular">Presentació del projecte
+		<p id="text_ppal">El Gremi d'Hostelers de la ciutat de Lleida tenim el gust de presentar-vos l'aplicatiu Takeaway Lleida: un sistema centralitzat per a realització de comandes de menjar per a entregar a domicili o recollir, que permetrà demanar menjar a qualsevol dels restaurants de la ciutat de Lleida i rodalies, adscrits al servei. D'aquesta manera s'ofereix un servei de qualitat, que engloba gran quantitat d'estils culinaris, i permet als negocis donar-se a conèixer dins una plataforma accessible a un públic molt ampli<br><br>El funcionament és molt senzill: un cop introduida l'adreça de l'usuari, es mostren els restaurants més propers a la seva ubicació.<br><br></p>
+		<img id="mapa" src="images/mapa.png" alt="Mapa de la ciutat de Lleida amb diversos restaurants indicats">
+		<p id="text_ppal2"><br>També es pot filtrar el resultat segons el tipus de cuina que es desitgi, i ordenar els resultats per preu, popularitat i altres característiques.<br><br>L'aplicatiu compta també amb un sistema de valoracions, ressenyes i opinions dels clients, un rànquing amb els locals més valorats, i una secció d'ofertes que s'actualitzarà constantment.<br><br>
+		</p>
+	</div>
+
+	<footer><!--Per acabar, el peu de pàgina o 'footer', on en aquest cas hi trobarem informació sobre el mòdul, la tasca a realitzar, i l'autor, tot encabit dins un quadre de text ('p') en un contenidor.-->
+	<div id="peu">
+		<p id="info"> ISE0M06 - Realització de projectes multimèdia interactius - UF4: Programació d'elements interactius - EAF4 Part 1 - Guillem Planas Vargas</p>
+	</div> 
+</footer>
+</body>
+</html>

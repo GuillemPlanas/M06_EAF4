@@ -1,0 +1,75 @@
+
+<!--Pàgina Tipus de Cuines. Aquí hi trobarem certa informació més sobre el sistema TakeAway Lleida, i alguns suggeriments de tipus de cuina, per anar començant.-->
+<!DOCTYPE html>
+<html>
+<head><!--En aquest apartat hi definim el títol de la pàgina ('title'), que també es mostrarà a la pestanya corresponent del navegador. També referenciem la pàgina d'estils associada al lloc web ('link'), i afegim dades referents a protocols i informació del lloc web ('meta').-->
+	<title>Takeaway Lleida - Tipus de cuines</title>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset-UTF-8"
+	name="author" content="Guillem Planas Vargas">
+</head>
+
+<body><!--Dividim l'estructura del cos de la pàgina ('body') en quatre apartats: el 'header' o capçalera, el 'footer' o peu de pàgina, i dos'div', o divisions/contenidors, corresponents al menú lateral, i al cos principal de la pàgina.-->
+
+	<header><!--Dins la capçalera hi carreguem una imatge de fons ('img'), i creem un nou contenidor ('div') on hi afegirem el títol de la pàgina, i els textos de 'login' i ajuda, per mitjà de línies de text ('p'). Per altra banda, també hi afegim el logo de l'empresa, però l'associem a un enllaç ('a'), que ens portarà a la pàgina principal ('index').-->
+		<img id="foto_cap" src="images/food2.png" alt="Plats amb menjar">
+		<div id="capçalera">
+			<p id="titol">TAKEAWAY LLEIDA</p>
+			<a id="home" href="index.html"><img id="logo" src="images/logo.png" alt="Logo de l'empresa"></a>
+			<p id="login">Login</p>
+			<p id="ajuda">Ajuda</p>
+		</div>
+	</header>
+
+	<div id="lateral"><!--Aquesta primera divisió, després de la capçalera, correspon al menú lateral, on hem creat una llista ordenada ('ul'), amb subapartats dins l'opció 'tipuscuina'. Els membres de la llista són enllaços a diferents continguts de la pàgina, tot i que no tots estan actius.-->
+		<nav class="mmenu">
+			<ul><!--Menú principal-->
+				<li><a href="tipuscuina.html">Tipus de cuina</a>
+					<ul><!--Submenú Tipus de cuina-->
+						<li><a href="cuinaitaliana.html">Italiana</a></li>
+						<li><a href="#">Japonesa</a></li>
+						<li><a href="#">Americana</a></li>
+						<li><a href="#">Àrab</a></li>				
+						<li><a href="#">Catalana</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Rànquing</a></li>
+				<li><a href="#">Ressenyes</a></li>
+				<li><a href="#">Ofertes</a></li>
+				<li><a href="contacte.html">El meu compte</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div id="cos"><!--La segona divisió correspon al cos principal de la pàgina, i està formada per línies de text ('p'), i un vídeo introductori, que es reprodueix automàticament, però només un cop. Hi podem trobar diferenciats el titular respecte a la resta del text, per d'aquesta manera posteriorment poder-ne variar l'estil dins el full CSS. També hi trobem quatre elements interactius, continguts en els corresponents 'div', que combinant una imatge amb un enllaç ens porten a les pàgines de diferents tipus de cuines (en aquest cas només funciona la italiana).-->
+		<p id="titular">Tipus de cuines</p>
+		<video id="cuines" preload="auto" autoplay><!--Vídeo i configuració-->
+			<source src="images/cuines.mp4" alt="vídeo de gent menjant">
+		</video>
+		<p id="text_ppal"><br>Des de Takeaway Lleida creiem que en la varietat està el gust, i és per això que t'oferim una àmplia oferta de restaurants a la teva ciutat, de tots els estils, tipus de cuines i preus. Podràs trobar des de les típiques hamburgueses i pizza, fins a cuines més exòtiques, o restaurants especialitzats. És molt senzill: només has de cercar, dins el tipus de cuina que et vingui de gust, el restaurant més adient. Tot seguit, realitzes la comanda des de la seva secció, i en uns minuts la rebràs a casa.<br><br>Quin tipus de cuina et ve de gust menjar? <br></p>
+		<div id="tipus"><!--'Botó'' de tipus de cuina. Combinem una imatge amb un enllaç, dins el mateix contenidor.-->
+			<img id="bot_menjar" src="images/pizza.png" alt="Cuina italiana">
+			<a id="bot_tipo1" href="cuinaitaliana.html">Italiana</a>
+		</div>
+		<div id="tipus">
+			<img id="bot_menjar" src="images/sushi.png" alt="Cuina japonesa">
+			<a id="bot_tipo2" href="#">Japonesa</a>
+
+		</div>
+		<div id="tipus">
+			<img id="bot_menjar" src="images/burger.png" alt="Cuina americana">
+			<a id="bot_tipo3" href="#">Americana</a>
+		</div>
+		<div id="tipus">
+			<img id="bot_menjar" src="images/kebab.png" alt="Cuina àrab">
+			<a id="bot_tipo4" href="#">Àrab</a>
+		</div>
+	</div>
+	
+	<footer><!--Per acabar, el peu de pàgina o 'footer', on en aquest cas hi trobarem informació sobre el mòdul, la tasca a realitzar, i l'autor, tot encabit dins un quadre de text ('p') en un contenidor.-->
+		<div id="peu">
+			<p id="info"> ISE0M06 - Realització de projectes multimèdia interactius - UF4: Programació d'elements interactius - EAF4 Part 1 - Guillem Planas Vargas</p>
+		</div> 
+	</footer>
+</body>
+</html>

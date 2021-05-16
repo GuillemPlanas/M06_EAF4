@@ -1,0 +1,103 @@
+
+<!--Pàgina de contacte. Omplint el formulari de la pàgina l'usuari es posarà en contacte amb TakeAway Lleida. El formulari només compta amb els camps requerits a l'exercici, i caldria ampliar-lo.-->
+<!DOCTYPE html>
+<html>
+<head><!--En aquest apartat hi definim el títol de la pàgina ('title'), que també es mostrarà a la pestanya corresponent del navegador. També referenciem la pàgina d'estils associada al lloc web ('link'), i afegim dades referents a protocols i informació del lloc web ('meta').-->
+	<title>Takeaway Lleida - Formulari de contacte</title>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset-UTF-8"
+	name="author" content="Guillem Planas Vargas">
+</head>
+
+<body><!--Dividim l'estructura del cos de la pàgina ('body') en quatre apartats: el 'header' o capçalera, el 'footer' o peu de pàgina, i dos'div', o divisions/contenidors, corresponents al menú lateral, i al cos principal de la pàgina.-->
+
+	<header><!--Dins la capçalera hi carreguem una imatge de fons ('img'), i creem un nou contenidor ('div') on hi afegirem el títol de la pàgina, i els textos de 'login' i ajuda, per mitjà de línies de text ('p'). Per altra banda, també hi afegim el logo de l'empresa, però l'associem a un enllaç ('a'), que ens portarà a la pàgina principal ('index').-->
+		<img id="foto_cap" src="images/food4.png" alt="Plats amb menjar">
+		<div id="capçalera">
+			<p id="titol">TAKEAWAY LLEIDA</p>
+			<a id="home" href="index.html"><img id="logo" src="images/logo.png" alt="Logo de l'empresa"></a>
+			<p id="login">Login</p>
+			<p id="ajuda">Ajuda</p>
+		</div>
+	</header>
+
+	<div id="lateral"><!--Aquesta primera divisió, després de la capçalera, correspon al menú lateral, on hem creat una llista ordenada ('ul'), amb subapartats dins l'opció 'tipuscuina'. Els membres de la llista són enllaços a diferents continguts de la pàgina, tot i que no tots estan actius.-->
+		<nav class="mmenu">
+			<ul><!--Menú principal-->
+				<li><a href="tipuscuina.html">Tipus de cuina</a>
+					<ul><!--Submenú Tipus de cuina-->
+						<li><a href="cuinaitaliana.html">Italiana</a></li>
+						<li><a href="#">Japonesa</a></li>
+						<li><a href="#">Americana</a></li>
+						<li><a href="#">Àrab</a></li>				
+						<li><a href="#">Catalana</a></li>	
+					</ul>
+				</li>
+				<li><a href="#">Rànquing</a></li>
+				<li><a href="#">Ressenyes</a></li>
+				<li><a href="#">Ofertes</a></li>
+				<li><a href="contacte.html">El meu compte</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div id="cos"><!--La segona divisió correspon al cos principal de la pàgina, i està formada per línies de text ('p'), i un formulari que l'usuari haurà d'omplir. Hi podem trobar diferenciats el titular respecte a la resta del text, per d'aquesta manera posteriorment poder-ne variar l'estil dins el full CSS.-->
+		<p id="titular">Contacta'ns</p>
+		<p id="text_ppal">Omple el següent formulari per poder posar-te en contacte amb nosaltres. En un termini màxim de 24 hores rebràs resposta.<br><br></p>
+
+		<!--Creació i configuració del formulari. En aquets cas, tots els camps solicitats són requerits per tal de poder enviar el formulari, però en el cas que algun d'aquests camps no fos requerit, només caldria eliminar el camp 'required' de l'element d'entrada de dades corresponent.-->
+		<form id="contacte" action="contacte_ok.html" method="post">
+			<!--Els camps de text estan formats per una etiqueta ('label') que indica el camp solicitat, una entrada de text ('input' amb type 'text'), associada a l'etiqueta, i amb una mida i altres paràmetres establerts.-->
+			<label for="nom">Nom(*)<br></label>
+			<input type="text" id="nom" name="nom" value="" size="70" minlength="2" maxlength="30" placeholder="Escriu el teu nom" autofocus required>
+
+			<label for="cognoms"><br>Cognoms(*)<br></label>
+			<input type="text" id="cognoms" name="cognoms" value="" size="70" minlength="4" maxlength="80" placeholder="Escriu els teus cognoms" required>
+
+			<label for="adreca"><br>Adreça(*)<br></label>
+			<input type="text" id="adreca" name="adreca" value="" size="70" minlength="4" maxlength="80" placeholder="Escriu la teva adreça" required>
+
+			<!--Per a la tria de ciutat s'ha optat per una llista desplegable ('select'), amb diferents opcions on triar, associada a una etiqueta.-->
+			<label for="ciutat"><br>Ciutat(*)<br></label>
+			<select id="ciutat" name="ciutat" required>
+				<option value="" selected="selected">Selecciona...</option>
+				<option value="lleida">Lleida</option>
+				<option value="tarragona">Tarragona</option>
+				<option value="girona">Girona</option>
+				<option value="barcelona">Barcelona</option>
+				<option value="altres">Altres</option>
+			</select>
+
+			<!--Per a la data de naixement s'ha utilitzat una entrada mixta de text,associada a un calendari ('input' amb type 'date.')-->
+			<label for="naixement"><br>Data de naixement(*)<br></label>
+			<input type="date" id="naixement" name="naixement" required>
+
+			<!--Per al sexe s'han emprat entrades del tipus 'radio', que són selectors radials.-->
+			<br>Sexe(*)<br>
+			<input type="radio" name="sexe" value="dona" checked required>Dona
+			<input type="radio" name="sexe" value="home">Home<br>
+
+			<!--Pel correu electrònic s'ha utilitzat una entrada del tipus 'email', que és molt similar a les entrades de text, però realitzant comprovacions sobre la correcció de l'adreça electrònica introduida.-->
+			<label for="email">Correu electrònic(*)<br></label>
+			<input type="email" id="email" name="email" value="" size="70" minlength="6" maxlength="50"placeholder="Escriu el teu correu electrònic" required>
+
+			<!--El camp contrasenya s'ha establert amb una entrada del tipus 'password', que no mostra el text que s'escriu, sinó punts negres, evitant d'aquesta manera fer visible la paraula de pas.-->
+			<label for="email"><br>Contrasenya(*)<br></label>
+			<input type="password" id="password" name="password" value="" size="30" minlength="4" maxlength="20" placeholder="Contrasenya" required><br><br>
+
+			<!--L'acceptació de condicions es realitza per mitjà d'una entrada del tipus 'checkbox', que l'usuari haurà de seleccionar.-->
+			<input name="condicions" type="checkbox" value="condicions" required>Accepto les condicions sobre tractament de dades de Takeaway Lleida.(*)<br>
+			<p id="requerit">(*)Cal omplir aquest camp</p><br>
+
+			<!--Botons per enviar el formulari o esborrar les dades introduides.-->
+			<input id="boto" type="submit" name="enviar" value="Enviar">
+			<input id="boto" type="reset" name="netejar" value="Esborra">
+	</div>
+	
+	<footer><!--Per acabar, el peu de pàgina o 'footer', on en aquest cas hi trobarem informació sobre el mòdul, la tasca a realitzar, i l'autor, tot encabit dins un quadre de text ('p') en un contenidor.-->
+		<div id="peu">
+			<p id="info"> ISE0M06 - Realització de projectes multimèdia interactius - UF4: Programació d'elements interactius - EAF4 Part 1 - Guillem Planas Vargas</p>
+		</div> 
+	</footer>
+</body>
+</html>
